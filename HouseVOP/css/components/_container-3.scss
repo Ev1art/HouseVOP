@@ -1,0 +1,74 @@
+.container-3 {
+    h2 {
+       margin-bottom: 100px; 
+    }
+}
+
+.pages {
+    position: relative;
+
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    column-gap: 30px;
+
+    width: 100%;
+    
+
+}
+
+.pages::before {
+    content: "III";
+
+    display: inline-block;
+
+    position: absolute;
+    top: -205px;
+    left: -227px;
+
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 400px;
+    line-height: 533px;
+
+    opacity: 0.02;
+}
+
+.page {
+    position: relative;
+
+    img {
+        width: 100%;
+        max-width: 535px;
+    }
+
+    p {
+        position: absolute;
+        left: 50px;
+        bottom: 50px;
+
+        font-size: 24px;
+        line-height: 28px;
+
+        transition-property: color;
+        transition-duration: 100ms;
+    }
+}
+.page:active {
+    p {
+        color: $dark-text;
+    }
+}
+
+.page-img {
+    border-color: rgba($color: $gray-text, $alpha: 0);
+    border-width: 1px;
+    border-style: solid;
+
+    transition-property: border-color;
+    transition-duration: 200ms;
+}
+
+.page-img:hover {
+    border-color: rgba($color: $gray-text, $alpha: 1);
+}

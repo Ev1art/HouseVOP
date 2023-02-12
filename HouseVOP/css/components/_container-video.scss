@@ -1,0 +1,63 @@
+.container-video {
+    position: relative;
+
+    margin-bottom: 180px;
+}
+
+.container-video .content{
+    position: relative;
+}
+
+.container-video::before {
+    content: "IV";
+
+    display: inline-block;
+
+    position: absolute;
+    top: 30px;
+    right: 60px;
+
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 400px;
+    line-height: 533px;
+
+    opacity: 0.02;
+}
+
+.video {
+    display: block;
+    margin: 0 auto;
+
+    height: 650px;
+    width: 720px;
+
+    transition-property: width;
+    transition-duration: 1.5s;
+}
+
+.video-play {
+    width: 100%;
+}
+
+.btn-play {
+    fill: $accent;
+
+    position: absolute;
+
+    top: 42%;
+    left: 46%;
+}
+
+.btn-off {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    svg {
+        fill: none;
+    }
+
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,33 @@
+.container-map {
+    position: relative;
+    h2 {
+        margin-bottom: 100px;
+    }
+
+    margin-bottom: 180px;
+}
+
+.map {
+    position: relative;
+
+    width: 1110px;
+    height: 360px;
+
+}
+
+.container-map::before {
+    content: "V";
+
+    display: inline-block;
+
+    position: absolute;
+    top: -55px;
+    left: 130px;
+
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 400px;
+    line-height: 533px;
+
+    opacity: 0.02;
+}
